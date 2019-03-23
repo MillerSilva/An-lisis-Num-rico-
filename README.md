@@ -32,4 +32,4 @@ Tambien pueden descargar los libro de los siguientes enlaces:
 Clases de Análisis Numérico (**en ingles**), puedes encontarlos [aqui](https://www.youtube.com/channel/UCymnkm62lUBbdgRJsjqKqQg)
 
 ### Extra material
-Puedes encontrar información de diversos tipos de topicos [aqui](https://ocw.mit.edu/index.htm)
+Puedes encontrar información de diversos topicos [aqui](https://ocw.mit.edu/index.htm)
