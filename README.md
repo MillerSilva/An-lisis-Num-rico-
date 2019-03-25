@@ -24,6 +24,7 @@ miller@Bobby:~$ git push -u origin master
 Tambien pueden descargar los libro de los siguientes enlaces:
 * [Scientific Computing with Python 3](https://b-ok.cc/book/2851389/0b0a11)
 * [Numerical Analysis: Mathematics of Scientific Computing](https://b-ok.cc/book/3711944/1a9c5d)
+* [Numerical Methods in Matrix Computations](https://b-ok.cc/book/2465290/f9f609)
 
 
 # Videos
