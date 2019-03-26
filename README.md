@@ -29,6 +29,11 @@ Tambien pueden descargar los libro de los siguientes enlaces:
 * [Numerical Methods in Matrix Computations](https://b-ok.cc/book/2465290/f9f609)
 
 
+
+* [Mastering Matplotlib](https://b-ok.cc/book/2592703/d9a7d3)
+* [Learning SciPy for Numerical and Scientific Computing](https://book4you.org/book/2736913/742de6)
+* [Mastering Python Scientific Computing](https://book4you.org/book/2610864/c601a7)
+
 ### Videos
 Clases de Análisis Numérico (**en ingles**), puedes encontarlos [aquí](https://www.youtube.com/channel/UCymnkm62lUBbdgRJsjqKqQg)
 
