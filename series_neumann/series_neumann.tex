@@ -1,0 +1,99 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
+%%%%%%
+\newcommand{\ds}{\displaystyle}
+\newcommand{\re}{\mathbb{R}}
+
+\newtheorem{theo}{Teorema}[section]
+\newtheorem{example}{Ejemplo}[section]
+\newtheorem{definition}{Definición}[section]
+\newtheorem{algorithm}{Algoritmo}[section]
+%%%%%%%
+\title{Series de Neumann}
+\begin{document}
+\maketitle
+
+\section{Introducción}
+
+Sea $V$ un espacio vectorial, al cual se le asigna una norma $\Vert .\Vert$, decimos que $(V, \Vert .\Vert)$ es un espacio lineal normado.
+La noción de convergencia de una sucesión de vectores $v^{(1)}, v^{(2)}, v^{(3)},\ldots$ se define de la siguiente manera:
+$$[v^{(k)}]\rightarrow v\quad sii\quad\lim_{k\rightarrow\infty}\Vert v^{(k)}-v\Vert = 0$$
+
+\section{Series de Neumann}
+
+\begin{theo}
+	Si $A$ es una matriz $n\times n$ tal que $\Vert A\Vert <1$, entonces $A^{-1}$ es inversible y
+	\begin{equation}\label{neuman's serie}
+		(I-A)^{-1} = \sum_{k=0}^{\infty}A^{k} 
+	\end{equation}
+\end{theo}
+
+\textbf{Prueba}\\
+Sea 
+\begin{align*}
+	S_{m} 	= (I-A)\ds\sum_{k=0}^{m}A^{k} &= \ds\sum_{k=0}^{m}A^{k}-A^{k+1}\\
+			&= I -A^{m+1}\\							 
+\end{align*}
+
+Vamos a probar que $(S_{m})$  converge a $I$
+$$\lim_{m\rightarrow\infty}\Vert S_{m}-I\Vert = \lim_{m\rightarrow\infty}\Vert -A^{m+1}\Vert = \lim_{m\rightarrow\infty}\Vert A^{m+1}\Vert$$
+Pero $\Vert A^{m+1}\Vert \leq\Vert A\Vert^{m+1}$
+$$\Rightarrow\lim_{m\rightarrow\infty}\Vert S_{m}-I\Vert\leq\lim_{m\rightarrow\infty}\Vert A\Vert^{m+1} = 0\quad , pues\; \Vert A\Vert <1$$
+\begin{equation}\label{convergencia_neumann}
+\therefore (S_{m}) \rightarrow I
+\end{equation}
+
+Ahora probemos que $I-A$ es inversible.
+Supongamos que $I-A$ no es innversible\\
+$\Rightarrow\exists x\in \re^{n}-\{0\}/\quad (I-A)x = 0$\\
+Ahora tomando $z = \frac{x}{\Vert x \Vert}$
+\begin{align*}
+	&\Rightarrow (I-A)z\Vert x\Vert = 0\\
+	&\Rightarrow (I-A)z = 0,\quad\Vert z\Vert = 1\\
+	&\Rightarrow 1 = \Vert z\Vert = \Vert Az\Vert\leq\vert A\Vert\Vert z\Vert = \Vert A\Vert\\
+	&\Rightarrow 1\leq \Vert A\Vert\quad(\textbf{contradicción})
+\end{align*}
+$$\therefore I-A\quad es\; inversible$$
+
+De $(\ref{convergencia_neumann})$ tenemos $(S_{m}) = \left((I-A)\ds\sum_{k=0}^{n}A^{k}\right)\rightarrow I$\\
+Por lo tanto $\left(\ds\sum_{k=0}^{m}A^{k}\rightarrow (I-A)^{-1}\right)$, es decir
+$$(I-A)^{-1} = \sum_{k=0}^{\infty}A^{k}$$
+
+\begin{algorithm}
+	VER COMO HACER LOS SANGRADOS
+\end{algorithm}
+
+\begin{example}[Ejercicio de Aplicación]
+Use la se serie  de Neumann (\ref{neuman's serie}) para calcular la inversa de la matriz.
+$$B = \begin{bmatrix}
+	0.9	&	-0.2		&	-0.3\\
+	0.1	&	1.0		&	-0.1\\
+	0.3	&	0.2		&	1.1
+\end{bmatrix}$$
+Use la norma del máximo
+\end{example}
+\textbf{Ver solución en cuaderno Jupyter}
+
+\begin{theo}
+	Si $A$ y $B$ son matrices $n\times n$ tal que $\Vert I-AB\Vert <1$, $A$ y $B$ son inversibles. Entonces:
+	\begin{align*}
+		A^{-1} &= B\left(\sum_{k=0}^{\infty} (I-AB)^{k}\right)\\
+		B^{-1} &= \left(\sum_{k=0}^{\infty} (I-AB)^{k}\right)A
+	\end{align*}
+\end{theo}
+\textbf{Prueba}\\
+Como $\Vert I-AB\Vert < 1$, entonces $AB = I-(I-AB)$ es inversible y
+$$(AB)^{-1} = \sum_{k=0}^{\infty}(I-AB)^{-1}$$
+Luego
+\begin{align*}
+	A^{-1} &= BB^{-1}A^{-1} = B(AB)^{-1} = B\left(\sum_{k=0}^{\infty} (I-AB)^{k}\right)\\
+	B^{-1} &= BA^{-1}A = (AB)^{-1}A = \left(\sum_{k=0}^{\infty} (I-AB)^{k}\right)A
+\end{align*}
+\end{document}
+
