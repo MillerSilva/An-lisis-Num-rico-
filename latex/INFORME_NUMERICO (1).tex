@@ -11,7 +11,9 @@
 \usepackage{amsthm}
 \usepackage{stackrel}
 \usepackage{graphicx}
-
+\usepackage[colorinlistoftodos]{todonotes}
+%Color a las referencias
+\usepackage[colorlinks=true, allcolors=blue]{hyperref}
 \usepackage[spanish]{babel}
 \selectlanguage{spanish}
 \usepackage[utf8]{inputenc} 
@@ -51,28 +53,39 @@
 \usepackage{hyperref}
 \begin{document}
 \begin{center}
- {\Large \textbf{MODELAMIENTO DE LA ECONOMÍA DE UN PAÍS MEDIANTE EL MODELO DE LEONTIEF }}
+ {\Large \textbf{MODELAMIENTO DE LA ECONOMÍA DE UN PAÍS}}
 \end{center}
 \begin{center}
- Gustavo Lozano, Miller Silva, Victor Ponce, Kevin Solano, Nicks Lazaro\vskip5pt
+ Gustavo Lozano$^{1}$, Miller Silva$^{2}$, Victor Ponce$^{3}$, Kevin Solano$^{4}$, Nicks Lazaro$^{5}$ elazaroc@uni.pe , \vskip5pt
+ 
 {\it Facultad de Ciencias, Universidad Nacional de Ingenier\'{\i}a\\}
 \end{center}
 %\maketitle 
 \vspace*{1cm}
 \begin{abstract}
-\noindent El modelo de Leontief tambien conocido por el modelo de IO(Input-Output) se elabora a partir de datos económicos observados en una región, que puede ir desde una nación a una región dentro de la misma. Concierne por regla general a la producción industrial agrupada en sectores. La actividad económica en la región se divide en un número de segmentos o de sectores productivos. Pueden ser industrias en sentido más general (automóviles) o más específico como (industria de neumáticos). Cada sector agrupa actividades que tienen diferentes ritmos de consumo y producción de bienes. Parte de la producción de un sector (Output) puede ir al consumo (Input) de otro distinto sector dentro de la región bajo estudio. Esta información se recolecta en forma de una tabla denominada: Tabla Input-Output o Tabla IO. Las tablas con sus interdependencias se suelen elaborar con datos procedentes de intervalos anuales. Los intercambios de bienes suelen ser indicados como ventas, compras o bienes físicos. Pero es habitual que las unidades de medida empleados en el modelo se realice en términos monetarios. 
+
+\noindent Las matemáticas son de gran importancia y ayuda para el progreso de muchas disciplinas, como por ejemplo la economía. El desarrollo de este método combina el uso de la teoría económica, el análisis estadístico y matemático. Introducir ciertas simplificaciones y supuestos para crear un modelo que ayudara a predecir los niveles de producción futuros de cada sector o industria, a fin de satisfacer las demandas futuras para diversos productos. La actividad económica en la región se divide en un número de segmentos o de sectores productivos. Cada sector agrupa actividades que tienen diferentes ritmos de consumo y producción de bienes. Parte de la producción de un sector (Output) puede ir al consumo (Input) de otro distinto sector. Esta información se recolecta en forma de una matriz. Los paises poseen muchas industrias relevantes causando que se generan matrices muy grandes, encontrar la solucion manualmente es muy ineficiente, por ello recurimos al uso de computadores. Para poder confiar en los resultados de la maquina hacemos uso del \textbf{análisis numérico} encontrando los metodos adecuados para obtener la solución con menor error.
 
 \end{abstract}
 
 \begin{quotation}
 	{\small
-		
-		Keywords: \\ 
-		Tabla Input-Output\\
-		Demanda externa\\
-		Demanda interna\\
-		Sistemas cerrados\\
-		Sistemas abiertos\\
+		\noindent\textbf{Palabras Clave:} \\ 
+	Análisis estadístico, Demanda futura, Sector industrial, Producción futura, Análisis numérico\\
+	}
+\end{quotation}
+
+\renewcommand{\abstractname}{Abstract}
+\begin{abstract}
+	\noindent Mathematics is of great importance and helps the progress of many disciplines, such as economics. The development of this method combines the use of economic theory, statistical and mathematical analysis. Economic activity in the region is divided into a number of segments or productive sectors. Each sector groups activities that have different rates of consumption and production of goods. Part of the production of a sector (Output) can go to the consumption (Input) of another different sector. This information is collected in the form of a matrix. Countries have a large number of industries, which generates very large matrices, finding the solution manually is very inefficient, therefore, we resort to the use of computers. To be able to trust the results of the machine, we make use of the \textbf{Numerical Analysis} finding the adequate methods to obtain the solution with less error.
+	
+\end{abstract}
+
+
+\begin{quotation}
+	{\small
+		\noindent \textbf{Keywords:} \\ 
+		Statistical analysis, Future demand, Industrial sector, Future production, Numerical analysis\\
 	}
 \end{quotation}
 
@@ -83,13 +96,16 @@
 \begin{center}
 {\large \bf 1. INTRODUCCI\'ON}
 \end{center}
- Con el fin de comprender y ser capaz de manipular la economía de un país o una región, uno tiene que llegar a un cierto modelo basado en los diversos sectores de esta economía. El modelo de Leontief es un intento en esta dirección. Basado en la suposición de que cada industria en la economía tiene dos tipos de exigencias: la demanda externa (de fuera del sistema) y la demanda interna (demanda coloca en una industria por otro en el mismo sistema), el modelo de Leontief representa la economía como un sistema de ecuaciones de lineales. El modelo de Leontief fue inventado en los años 30 por el profesor Wassily Leontief (imagen de arriba) que desarrolló un modelo económico de la economía de Estados Unidos mediante su división en 500 sectores económicos. El 18 de octubre de 1973, el profesor Leontief fue galardonado con el Premio Nobel de economía por su esfuerzo.
-\\
+ Con el fin de comprender y ser capaz de manipular la economía de un país o una región, uno tiene que llegar a un cierto modelo basado en los diversos sectores de esta economía. El modelo de Leontief es un intento en esta dirección. Basado en la suposición de que cada industria en la economía tiene dos tipos de exigencias: la demanda externa (de fuera del sistema) y la demanda interna (demanda coloca en una industria por otro en el mismo sistema), el modelo de Leontief representa la economía como un sistema de ecuaciones de lineales. El modelo de Leontief fue inventado en los años 30 por el profesor Wassily Leontief \color{blue} Fig 1 \color{black} que desarrolló un modelo económico de la economía de Estados Unidos mediante su división en 500 sectores económicos. El 18 de octubre de 1973, el profesor Leontief fue galardonado con el Premio Nobel de economía por su esfuerzo.\\
+ 
 \begin{center}
-	\includegraphics[scale=0.7]{leontief}
+	
+	
+	\centering
+	\includegraphics[width=5cm,height=5cm]{leontief.jpg}
+	\\
+	Fig1: Profesor Wassily Leontief
 \end{center}
-
-\vspace*{0.5cm}
 
 \begin{center}
 {\large \bf 2. CONCEPTOS PREVIOS}
