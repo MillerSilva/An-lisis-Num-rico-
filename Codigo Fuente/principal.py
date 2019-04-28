@@ -52,5 +52,6 @@ if __name__ == '__main__' :
 
     b = np.array([10, 23, 5, 17])
     datos = get_Data(A,b)
-    print(datos)
-    help(get_Data)
+    print(datos['Eliminacion Gaussian'])
+    #print(datos)
+    #help(get_Data)
