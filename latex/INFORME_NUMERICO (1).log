@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2019.2.12)  29 APR 2019 01:22
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2019.2.12)  29 APR 2019 02:26
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -852,30 +852,35 @@ Overfull \hbox (18.77979pt too wide) in paragraph at lines 268--269
  [] 
  []
 
-<matrix.pdf, id=66, page=2, 845.0471pt x 597.50829pt>
+<matrix.pdf, id=68, page=2, 845.0471pt x 597.50829pt>
 File: matrix.pdf Graphic file (type pdf)
 <use matrix.pdf, page 2>
-Package pdftex.def Info: matrix.pdf , page2 used on input line 272.
+Package pdftex.def Info: matrix.pdf , page2 used on input line 273.
 (pdftex.def)             Requested size: 493.94073pt x 273.14717pt.
 
-Overfull \hbox (18.77979pt too wide) in paragraph at lines 272--273
+Overfull \hbox (18.77979pt too wide) in paragraph at lines 273--274
  [] 
  []
+
+
+Package multicol Warning: I moved some lines to the next page.
+(multicol)                Footnotes on page  might be wrong on input line 280.
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
 een already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.281 \end{multicols}
-                      [5 <./matrix.pdf, page is rotated 90 degrees> <./matrix.p
-df, page is rotated 90 degrees>]
-<tabla.pdf, id=94, page=1, 597.23125pt x 845.1575pt>
+l.280 ...estro sistema a resolver es $$(I-A)P=d$$ 
+                                                  donde $p_i$ es la producci...
+[5 <./matrix.pdf, page is rotated 90 degrees> <./matrix.pdf, page is rotated 90
+ degrees>]
+<tabla.pdf, id=101, page=1, 597.23125pt x 845.1575pt>
 File: tabla.pdf Graphic file (type pdf)
 <use tabla.pdf, page 1>
-Package pdftex.def Info: tabla.pdf , page1 used on input line 284.
+Package pdftex.def Info: tabla.pdf , page1 used on input line 285.
 (pdftex.def)             Requested size: 477.78564pt x 152.59552pt.
 
-Overfull \hbox (2.6247pt too wide) in paragraph at lines 284--285
+Overfull \hbox (2.6247pt too wide) in paragraph at lines 285--286
  [] 
  []
 
@@ -884,13 +889,24 @@ Underfull \hbox (badness 10000) in paragraph at lines 321--322
 
  []
 
+
+Overfull \vbox (44.15547pt too high) has occurred while \output is active []
+
+
+Overfull \vbox (44.15547pt too high) has occurred while \output is active []
+
+
+
+Package multicol Warning: I moved some lines to the next page.
+(multicol)                Footnotes on page  might be wrong on input line 326.
+
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
 een already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.328 \end{center}
-                   [6 <./tabla.pdf>]pdfTeX warning (ext4): destination with the
- same identifier (name{page.}) has been already used, duplicate ignored
+l.326 \begin{center}
+                     [6 <./tabla.pdf>]pdfTeX warning (ext4): destination with t
+he same identifier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.353 \end{document}
@@ -911,11 +927,11 @@ Package rerunfilecheck Info: File `"INFORME_NUMERICO (1)".out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 353.
  ) 
 Here is how much of TeX's memory you used:
- 17833 strings out of 492616
- 329208 string characters out of 6134203
+ 17854 strings out of 492616
+ 329417 string characters out of 6134203
  429306 words of memory out of 5000000
- 21387 multiletter control sequences out of 15000+600000
- 8508 words of font info for 32 fonts, out of 8000000 for 9000
+ 21399 multiletter control sequences out of 15000+600000
+ 11608 words of font info for 44 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  62i,9n,81p,1221b,576s stack positions out of 5000i,500n,10000p,200000b,80000s
 </opt/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></opt/texl
@@ -926,15 +942,17 @@ fonts/cm/cmmi10.pfb></opt/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmm
 i12.pfb></opt/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></opt
 /texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></opt/texlive/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></opt/texlive/texmf-dist/fonts/
-type1/public/amsfonts/cm/cmr7.pfb></opt/texlive/texmf-dist/fonts/type1/public/a
-msfonts/cm/cmr9.pfb></opt/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cms
-l10.pfb></opt/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></op
-t/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></opt/texlive/te
-xmf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb>
-Output written on "INFORME_NUMERICO (1).pdf" (7 pages, 235708 bytes).
+type1/public/amsfonts/cm/cmr6.pfb></opt/texlive/texmf-dist/fonts/type1/public/a
+msfonts/cm/cmr7.pfb></opt/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr
+8.pfb></opt/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></opt/te
+xlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl10.pfb></opt/texlive/texmf-
+dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></opt/texlive/texmf-dist/fonts/t
+ype1/public/amsfonts/cm/cmti10.pfb></opt/texlive/texmf-dist/fonts/type1/public/
+amsfonts/cm/cmti9.pfb>
+Output written on "INFORME_NUMERICO (1).pdf" (7 pages, 254605 bytes).
 PDF statistics:
- 164 PDF objects out of 1000 (max. 8388607)
- 111 compressed objects within 2 object streams
- 7 named destinations out of 1000 (max. 500000)
+ 178 PDF objects out of 1000 (max. 8388607)
+ 123 compressed objects within 2 object streams
+ 9 named destinations out of 1000 (max. 500000)
  147 words of extra memory for PDF output out of 10000 (max. 10000000)
 

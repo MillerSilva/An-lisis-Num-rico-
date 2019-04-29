@@ -56,9 +56,9 @@
  {\Large \textbf{MODELAMIENTO DE LA ECONOMÍA DE UN PAÍS}}
 \end{center}
 \begin{center}
- Gustavo Lozano$^{1}$, Miller Silva$^{2}$, Victor Ponce$^{3}$, Kevin Solano$^{4}$, Nicks Lazaro$^{5}$ \vskip5pt
- {\it Facultad de Ciencias, Universidad Nacional de Ingenier\'{\i}a\\}\vskip5pt
- Email: glozanoa@uni.pe$^{1}$, miller.silva.m@uni.pe$^{2}$, victor.ponce.p@uni.pe$^{3}$, elazaroc@uni.pe$^{5}$
+ Gustavo Lozano$^{1}$, Miller Silva$^{2}$, Victor Ponce$^{3}$, Nicks Lazaro$^{4}$, Kevin Solano$^{5}$ \vskip5pt
+ {\it Facultad de Ciencias$^1$, Universidad Nacional de Ingenier\'{\i}a$^1$\\}\vskip5pt
+ Email: glozanoa@uni.pe$^{1}$, miller.silva.m@uni.pe$^{2}$, victor.ponce.p@uni.pe$^{3}$, elazaroc@uni.pe$^{4}$
 \end{center}
 %\maketitle 
 \vspace*{1cm}
@@ -267,6 +267,7 @@ En este trabajo vamos a trabajar con el modelo abierto ya que este se asemeja a 
 	
 	\includegraphics[page=1, trim= 4cm 8.9cm 4cm 1cm ,clip,scale=0.8]{matrix}
 \end{center}
+\footnote{\href{https://drive.google.com/drive/folders/1IG3zhcmc9r95b-fswaWiVBEHy0orYTWj?usp=sharing}{\underline{click aquí para ver la matriz A completa}}}
 \vspace{-1.5cm}
 \begin{center}
 	\includegraphics[page=2, trim= 4cm 8cm 4cm 1cm ,clip,scale=0.8]{matrix}
@@ -277,7 +278,7 @@ En este trabajo vamos a trabajar con el modelo abierto ya que este se asemeja a 
 Nuestro objetivo es hallar el nivel de producción(en dólares) de cada una de las 20 industrias en ese período de una semana para satisfacer exactamente las demandas internas y externas.
 
 \noindent Ahora aplicando el modelo abierto de Leontief, nuestro sistema a resolver es $$(I-A)P=d$$ donde $p_i$ es la producción total(en dólares) de la industria $S_i$.\\
-Como este sistema es de $20\times20$ sería ``imposible'' resolverlo manualmente, para resolverlo debemos usar métodos numéricos. En la siguiente tabla se muestra los algoritmos usados para resolver la ecuación, con sus respectivos márgenes de error y su tiempo de demora.
+Como este sistema es de $20\times20$ sería ``imposible'' resolverlo manualmente, para resolverlo debemos usar métodos numéricos. En la siguiente tabla se muestra los algoritmos usados para resolver la ecuación, con sus respectivos márgenes de error y su tiempo de demora.\footnote{\href{https://drive.google.com/drive/folders/1F-M1slvs1ibC-nhFcPin_ge0fLCHVb1c?usp=sharing}{\underline{click aquí para ver el código de los métodos}}}
 \end{multicols}
 
 \begin{center}
@@ -286,7 +287,6 @@ Como este sistema es de $20\times20$ sería ``imposible'' resolverlo manualmente
 
 \begin{multicols}{2}
 	\noindent De la tabla deducimos que el peor algoritmo para resolver nuestra ecuación es la Factorización $LDL^t$ ya que este es el que tiene mayor rango de error y además es el que más demora en hallar la solución.\\ También observamos que el mejor algoritmo es para resolver nuestro sistema es la eliminación Gaussiana con pivote ya que su rango de error y su tiempo de ejecución son mínimos. Así nuestra mejor solución numérica es $P=X_5$.
-	
 	\begin{equation*}
 	P=
 	\begin{bmatrix}
