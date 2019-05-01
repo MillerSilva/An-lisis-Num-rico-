@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2019.2.12)  1 MAY 2019 18:39
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2019.2.12)  1 MAY 2019 18:34
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**"INFORME_NUMERICO (1).tex"
-(./INFORME_NUMERICO (1).tex
+**INFORME_NUMERICO_FINAL.tex
+(./INFORME_NUMERICO_FINAL.tex
 LaTeX2e <2018-12-01>
 (/opt/texlive/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2018/09/03 v1.4i Standard LaTeX document class
@@ -119,7 +119,44 @@ Package: amsthm 2017/10/31 v2.20.4
 \thm@headsep=\skip48
 \dth@everypar=\toks25
 )
-(/opt/texlive/texmf-dist/tex/latex/oberdiek/stackrel.sty
+(/opt/texlive/texmf-dist/tex/latex/algorithms/algorithm.sty
+Package: algorithm 2009/08/24 v0.1 Document Style `algorithm' - floating enviro
+nment
+
+(/opt/texlive/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count100
+\float@exts=\toks26
+\float@box=\box29
+\@float@everytoks=\toks27
+\@floatcapt=\box30
+)
+(/opt/texlive/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+)
+\@float@every@algorithm=\toks28
+\c@algorithm=\count101
+)
+(/opt/texlive/texmf-dist/tex/latex/algorithmicx/algpseudocode.sty
+Package: algpseudocode 
+
+(/opt/texlive/texmf-dist/tex/latex/algorithmicx/algorithmicx.sty
+Package: algorithmicx 2005/04/27 v1.2 Algorithmicx
+
+Document Style algorithmicx 1.2 - a greatly improved `algorithmic' style
+\c@ALG@line=\count102
+\c@ALG@rem=\count103
+\c@ALG@nested=\count104
+\ALG@tlm=\skip49
+\ALG@thistlm=\skip50
+\c@ALG@Lnr=\count105
+\c@ALG@blocknr=\count106
+\c@ALG@storecount=\count107
+\c@ALG@tmpcounter=\count108
+\ALG@tmplength=\skip51
+)
+Document Style - pseudocode environments for use with the `algorithmicx' style
+) (/opt/texlive/texmf-dist/tex/latex/oberdiek/stackrel.sty
 Package: stackrel 2016/05/16 v1.3 Adding subscript option to stackrel (HO)
 
 (/opt/texlive/texmf-dist/tex/generic/oberdiek/etexcmds.sty
@@ -157,7 +194,7 @@ Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
 
 (/opt/texlive/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
-\KV@toks@=\toks26
+\KV@toks@=\toks29
 )
 (/opt/texlive/texmf-dist/tex/latex/graphics/graphics.sty
 Package: graphics 2017/06/25 v1.2c Standard LaTeX Graphics (DPC,SPQR)
@@ -180,18 +217,15 @@ File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
 Package: todonotes 2019/01/24 v1.1.2 Todonotes source and documentation.
 Package: todonotes 2018/11/22
 
-(/opt/texlive/texmf-dist/tex/latex/base/ifthen.sty
-Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
-)
 (/opt/texlive/texmf-dist/tex/latex/xkeyval/xkeyval.sty
 Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
 
 (/opt/texlive/texmf-dist/tex/generic/xkeyval/xkeyval.tex
 (/opt/texlive/texmf-dist/tex/generic/xkeyval/xkvutils.tex
-\XKV@toks=\toks27
-\XKV@tempa@toks=\toks28
+\XKV@toks=\toks30
+\XKV@tempa@toks=\toks31
 )
-\XKV@depth=\count100
+\XKV@depth=\count109
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
 ))
 (/opt/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
@@ -215,13 +249,13 @@ Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
 (/opt/texlive/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty
 (/opt/texlive/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty
 (/opt/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex
-\pgfutil@everybye=\toks29
+\pgfutil@everybye=\toks32
 \pgfutil@tempdima=\dimen118
 \pgfutil@tempdimb=\dimen119
 
 (/opt/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-common-lists.tex))
 (/opt/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
-\pgfutil@abb=\box29
+\pgfutil@abb=\box31
 
 (/opt/texlive/texmf-dist/tex/latex/ms/everyshi.sty
 Package: everyshi 2001/05/15 v3.00 EveryShipout Package (MS)
@@ -238,11 +272,11 @@ Package: pgf 2019/02/02 v3.1.1 (3.1.1)
 Package: pgfsys 2019/02/02 v3.1.1 (3.1.1)
 
 (/opt/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
-\pgfkeys@pathtoks=\toks30
-\pgfkeys@temptoks=\toks31
+\pgfkeys@pathtoks=\toks33
+\pgfkeys@temptoks=\toks34
 
 (/opt/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeysfiltered.code.tex
-\pgfkeys@tmptoks=\toks32
+\pgfkeys@tmptoks=\toks35
 ))
 \pgf@x=\dimen120
 \pgf@y=\dimen121
@@ -254,14 +288,14 @@ Package: pgfsys 2019/02/02 v3.1.1 (3.1.1)
 \pgf@yc=\dimen127
 \w@pgf@writea=\write3
 \r@pgf@reada=\read1
-\c@pgf@counta=\count101
-\c@pgf@countb=\count102
-\c@pgf@countc=\count103
-\c@pgf@countd=\count104
-\t@pgf@toka=\toks33
-\t@pgf@tokb=\toks34
-\t@pgf@tokc=\toks35
-\pgf@sys@id@count=\count105
+\c@pgf@counta=\count110
+\c@pgf@countb=\count111
+\c@pgf@countc=\count112
+\c@pgf@countd=\count113
+\t@pgf@toka=\toks36
+\t@pgf@tokb=\toks37
+\t@pgf@tokc=\toks38
+\pgf@sys@id@count=\count114
 
 (/opt/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
 File: pgf.cfg 2019/02/02 v3.1.1 (3.1.1)
@@ -276,8 +310,8 @@ File: pgfsys-common-pdf.def 2019/02/02 v3.1.1 (3.1.1)
 )))
 (/opt/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.tex
 File: pgfsyssoftpath.code.tex 2019/02/02 v3.1.1 (3.1.1)
-\pgfsyssoftpath@smallbuffer@items=\count106
-\pgfsyssoftpath@bigbuffer@items=\count107
+\pgfsyssoftpath@smallbuffer@items=\count115
+\pgfsyssoftpath@bigbuffer@items=\count116
 )
 (/opt/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.code.tex
 File: pgfsysprotocol.code.tex 2019/02/02 v3.1.1 (3.1.1)
@@ -290,11 +324,11 @@ Package: pgfcore 2019/02/02 v3.1.1 (3.1.1)
 (/opt/texlive/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex)
 (/opt/texlive/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
 \pgfmath@dimen=\dimen128
-\pgfmath@count=\count108
-\pgfmath@box=\box30
-\pgfmath@toks=\toks36
-\pgfmath@stack@operand=\toks37
-\pgfmath@stack@operation=\toks38
+\pgfmath@count=\count117
+\pgfmath@box=\box32
+\pgfmath@toks=\toks39
+\pgfmath@stack@operand=\toks40
+\pgfmath@stack@operation=\toks41
 )
 (/opt/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.tex
 (/opt/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic.code.tex)
@@ -310,7 +344,7 @@ tex)
 (/opt/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integerarithmeti
 cs.code.tex)))
 (/opt/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
-\c@pgfmathroundto@lastzeros=\count109
+\c@pgfmathroundto@lastzeros=\count118
 ))
 (/opt/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.code.tex
 File: pgfcorepoints.code.tex 2019/02/02 v3.1.1 (3.1.1)
@@ -342,10 +376,10 @@ File: pgfcorepathusage.code.tex 2019/02/02 v3.1.1 (3.1.1)
 )
 (/opt/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.code.tex
 File: pgfcorescopes.code.tex 2019/02/02 v3.1.1 (3.1.1)
-\pgfpic=\box31
-\pgf@hbox=\box32
-\pgf@layerbox@main=\box33
-\pgf@picture@serial@count=\count110
+\pgfpic=\box33
+\pgf@hbox=\box34
+\pgf@layerbox@main=\box35
+\pgf@picture@serial@count=\count119
 )
 (/opt/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicstate.code.te
 x
@@ -372,14 +406,14 @@ File: pgfcorearrows.code.tex 2019/02/02 v3.1.1 (3.1.1)
 ) (/opt/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex
 File: pgfcoreshade.code.tex 2019/02/02 v3.1.1 (3.1.1)
 \pgf@max=\dimen152
-\pgf@sys@shading@range@num=\count111
+\pgf@sys@shading@range@num=\count120
 )
 (/opt/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
 File: pgfcoreimage.code.tex 2019/02/02 v3.1.1 (3.1.1)
 
 (/opt/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.code.tex
 File: pgfcoreexternal.code.tex 2019/02/02 v3.1.1 (3.1.1)
-\pgfexternal@startupbox=\box34
+\pgfexternal@startupbox=\box36
 ))
 (/opt/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorelayers.code.tex
 File: pgfcorelayers.code.tex 2019/02/02 v3.1.1 (3.1.1)
@@ -394,7 +428,7 @@ File: pgfcorerdf.code.tex 2019/02/02 v3.1.1 (3.1.1)
 )))
 (/opt/texlive/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.code.tex
 File: pgfmoduleshapes.code.tex 2019/02/02 v3.1.1 (3.1.1)
-\pgfnodeparttextbox=\box35
+\pgfnodeparttextbox=\box37
 )
 (/opt/texlive/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.tex
 File: pgfmoduleplot.code.tex 2019/02/02 v3.1.1 (3.1.1)
@@ -417,8 +451,8 @@ Package: pgffor 2019/02/02 v3.1.1 (3.1.1)
 (/opt/texlive/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)
 \pgffor@iter=\dimen155
 \pgffor@skip=\dimen156
-\pgffor@stack=\toks39
-\pgffor@toks=\toks40
+\pgffor@stack=\toks42
+\pgffor@toks=\toks43
 ))
 (/opt/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex
 Package: tikz 2019/02/02 v3.1.1 (3.1.1)
@@ -426,7 +460,7 @@ Package: tikz 2019/02/02 v3.1.1 (3.1.1)
 (/opt/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothandlers.code.
 tex
 File: pgflibraryplothandlers.code.tex 2019/02/02 v3.1.1 (3.1.1)
-\pgf@plot@mark@count=\count112
+\pgf@plot@mark@count=\count121
 \pgfplotmarksize=\dimen157
 )
 \tikz@lastx=\dimen158
@@ -435,21 +469,21 @@ File: pgflibraryplothandlers.code.tex 2019/02/02 v3.1.1 (3.1.1)
 \tikz@lastysaved=\dimen161
 \tikzleveldistance=\dimen162
 \tikzsiblingdistance=\dimen163
-\tikz@figbox=\box36
-\tikz@figbox@bg=\box37
-\tikz@tempbox=\box38
-\tikz@tempbox@bg=\box39
-\tikztreelevel=\count113
-\tikznumberofchildren=\count114
-\tikznumberofcurrentchild=\count115
-\tikz@fig@count=\count116
+\tikz@figbox=\box38
+\tikz@figbox@bg=\box39
+\tikz@tempbox=\box40
+\tikz@tempbox@bg=\box41
+\tikztreelevel=\count122
+\tikznumberofchildren=\count123
+\tikznumberofcurrentchild=\count124
+\tikz@fig@count=\count125
  (/opt/texlive/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.code.tex
 File: pgfmodulematrix.code.tex 2019/02/02 v3.1.1 (3.1.1)
-\pgfmatrixcurrentrow=\count117
-\pgfmatrixcurrentcolumn=\count118
-\pgf@matrix@numberofcolumns=\count119
+\pgfmatrixcurrentrow=\count126
+\pgfmatrixcurrentcolumn=\count127
+\pgf@matrix@numberofcolumns=\count128
 )
-\tikz@expandcount=\count120
+\tikz@expandcount=\count129
 
 (/opt/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibra
 rytopaths.code.tex
@@ -471,18 +505,18 @@ File: tikzlibraryfadings.code.tex 2019/02/02 v3.1.1 (3.1.1)
 File: pgflibraryfadings.code.tex 2019/02/02 v3.1.1 (3.1.1)
 ))) (/opt/texlive/texmf-dist/tex/latex/tools/calc.sty
 Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
-\calc@Acount=\count121
-\calc@Bcount=\count122
+\calc@Acount=\count130
+\calc@Bcount=\count131
 \calc@Adimen=\dimen164
 \calc@Bdimen=\dimen165
-\calc@Askip=\skip49
-\calc@Bskip=\skip50
+\calc@Askip=\skip52
+\calc@Bskip=\skip53
 LaTeX Info: Redefining \setlength on input line 80.
 LaTeX Info: Redefining \addtolength on input line 81.
-\calc@Ccount=\count123
-\calc@Cskip=\skip51
+\calc@Ccount=\count132
+\calc@Cskip=\skip54
 )
-\c@@todonotes@numberoftodonotes=\count124
+\c@@todonotes@numberoftodonotes=\count133
 )
 (/opt/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
 Package: hyperref 2018/11/30 v6.88e Hypertext links for LaTeX
@@ -531,15 +565,15 @@ Package: auxhook 2016/05/16 v1.4 Hooks for auxiliary files (HO)
 Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
 )
 \@linkdim=\dimen166
-\Hy@linkcounter=\count125
-\Hy@pagecounter=\count126
+\Hy@linkcounter=\count134
+\Hy@pagecounter=\count135
 
 (/opt/texlive/texmf-dist/tex/latex/hyperref/pd1enc.def
 File: pd1enc.def 2018/11/30 v6.88e Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
 ... no UTF-8 mapping file for font encoding PD1
 )
-\Hy@SavedSpaceFactor=\count127
+\Hy@SavedSpaceFactor=\count136
 
 (/opt/texlive/texmf-dist/tex/latex/latexconfig/hyperref.cfg
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
@@ -552,7 +586,7 @@ Package hyperref Info: Plain pages OFF on input line 4534.
 Package hyperref Info: Backreferencing OFF on input line 4539.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4772.
-\c@Hy@tempcnt=\count128
+\c@Hy@tempcnt=\count137
 
 (/opt/texlive/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip11
@@ -560,7 +594,7 @@ Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
 LaTeX Info: Redefining \url on input line 5125.
 \XeTeXLinkMargin=\dimen167
-\Fld@menulength=\count129
+\Fld@menulength=\count138
 \Field@Width=\dimen168
 \Fld@charsize=\dimen169
 Package hyperref Info: Hyper figures OFF on input line 6380.
@@ -572,23 +606,23 @@ Package hyperref Info: Link coloring with OCG OFF on input line 6405.
 Package hyperref Info: PDF/A mode OFF on input line 6410.
 LaTeX Info: Redefining \ref on input line 6450.
 LaTeX Info: Redefining \pageref on input line 6454.
-\Hy@abspage=\count130
-\c@Item=\count131
-\c@Hfootnote=\count132
+\Hy@abspage=\count139
+\c@Item=\count140
+\c@Hfootnote=\count141
 )
 Package hyperref Info: Driver (autodetected): hpdftex.
 
 (/opt/texlive/texmf-dist/tex/latex/hyperref/hpdftex.def
 File: hpdftex.def 2018/11/30 v6.88e Hyperref driver for pdfTeX
-\Fld@listcount=\count133
-\c@bookmark@seq@number=\count134
+\Fld@listcount=\count142
+\c@bookmark@seq@number=\count143
 
 (/opt/texlive/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
 Package: rerunfilecheck 2016/05/16 v1.8 Rerun checks for auxiliary files (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 82.
 )
-\Hy@SectionHShift=\skip52
+\Hy@SectionHShift=\skip55
 )
 (/opt/texlive/texmf-dist/tex/generic/babel/babel.sty
 Package: babel 2018/11/13 3.27 The Babel package
@@ -601,52 +635,50 @@ Language: spanish.ldf 2016/03/03 v5.0p Spanish support from the babel system
 
 (/opt/texlive/texmf-dist/tex/generic/babel/babel.def
 File: babel.def 2018/11/13 3.27 Babel common definitions
-\babel@savecnt=\count135
+\babel@savecnt=\count144
 \U@D=\dimen170
 
 (/opt/texlive/texmf-dist/tex/generic/babel/txtbabel.def)
-\bbl@dirlevel=\count136
+\bbl@dirlevel=\count145
 )
-\es@quottoks=\toks41
-\es@quotdepth=\count137
+\es@quottoks=\toks44
+\es@quotdepth=\count146
 Package babel Info: Making " an active character on input line 561.
 Package babel Info: Making . an active character on input line 662.
 Package babel Info: Making < an active character on input line 707.
 Package babel Info: Making > an active character on input line 707.
 ))
-LaTeX Info: Redefining \. on input line 18.
-LaTeX Info: Redefining \% on input line 18.
+LaTeX Info: Redefining \. on input line 20.
+LaTeX Info: Redefining \% on input line 20.
 
 (/opt/texlive/texmf-dist/tex/latex/base/inputenc.sty
 Package: inputenc 2018/08/11 v1.3c Input encoding file
-\inpenc@prehook=\toks42
-\inpenc@posthook=\toks43
+\inpenc@prehook=\toks45
+\inpenc@posthook=\toks46
 )
 (/opt/texlive/texmf-dist/tex/latex/tools/multicol.sty
 Package: multicol 2018/12/27 v1.8v multicolumn formatting (FMi)
-\c@tracingmulticols=\count138
-\mult@box=\box40
+\c@tracingmulticols=\count147
+\mult@box=\box42
 \multicol@leftmargin=\dimen171
-\c@unbalance=\count139
-\c@collectmore=\count140
-\doublecol@number=\count141
-\multicoltolerance=\count142
-\multicolpretolerance=\count143
+\c@unbalance=\count148
+\c@collectmore=\count149
+\doublecol@number=\count150
+\multicoltolerance=\count151
+\multicolpretolerance=\count152
 \full@width=\dimen172
 \page@free=\dimen173
 \premulticols=\dimen174
 \postmulticols=\dimen175
-\multicolsep=\skip53
-\multicolbaselineskip=\skip54
-\partial@page=\box41
-\last@line=\box42
+\multicolsep=\skip56
+\multicolbaselineskip=\skip57
+\partial@page=\box43
+\last@line=\box44
 \maxbalancingoverflow=\dimen176
-\mult@rightbox=\box43
-\mult@grightbox=\box44
-\mult@gfirstbox=\box45
-\mult@firstbox=\box46
-\@tempa=\box47
-\@tempa=\box48
+\mult@rightbox=\box45
+\mult@grightbox=\box46
+\mult@gfirstbox=\box47
+\mult@firstbox=\box48
 \@tempa=\box49
 \@tempa=\box50
 \@tempa=\box51
@@ -662,63 +694,65 @@ Package: multicol 2018/12/27 v1.8v multicolumn formatting (FMi)
 \@tempa=\box61
 \@tempa=\box62
 \@tempa=\box63
-\c@columnbadness=\count144
-\c@finalcolumnbadness=\count145
+\@tempa=\box64
+\@tempa=\box65
+\c@columnbadness=\count153
+\c@finalcolumnbadness=\count154
 \last@try=\dimen177
 \multicolovershoot=\dimen178
 \multicolundershoot=\dimen179
-\mult@nat@firstbox=\box64
-\colbreak@box=\box65
-\mc@col@check@num=\count146
+\mult@nat@firstbox=\box66
+\colbreak@box=\box67
+\mc@col@check@num=\count155
 )
-\c@definicion=\count147
-\c@teorema=\count148
-\c@prueba=\count149
-\c@prueba*=\count150
-\c@corolario=\count151
-\c@observacion=\count152
-\c@lema=\count153
-\c@ejemplo=\count154
-\c@solucion*=\count155
-\c@algoritmo=\count156
-\c@proposicion=\count157
+\c@definicion=\count156
+\c@teorema=\count157
+\c@prueba=\count158
+\c@prueba*=\count159
+\c@corolario=\count160
+\c@observacion=\count161
+\c@lema=\count162
+\c@ejemplo=\count163
+\c@solucion*=\count164
+\c@algoritmo=\count165
+\c@proposicion=\count166
 
-(./INFORME_NUMERICO (1).aux
+(./INFORME_NUMERICO_FINAL.aux
 LaTeX Info: Redefining \. on input line 23.
 LaTeX Info: Redefining \% on input line 23.
 LaTeX Info: Redefining \. on input line 24.
 LaTeX Info: Redefining \% on input line 24.
 )
-\openout1 = `"INFORME_NUMERICO (1).aux"'.
+\openout1 = `INFORME_NUMERICO_FINAL.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 55.
-LaTeX Font Info:    ... okay on input line 55.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 55.
-LaTeX Font Info:    ... okay on input line 55.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 55.
-LaTeX Font Info:    ... okay on input line 55.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 55.
-LaTeX Font Info:    ... okay on input line 55.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 55.
-LaTeX Font Info:    ... okay on input line 55.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 55.
-LaTeX Font Info:    ... okay on input line 55.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 55.
-LaTeX Font Info:    ... okay on input line 55.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 57.
+LaTeX Font Info:    ... okay on input line 57.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 57.
+LaTeX Font Info:    ... okay on input line 57.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 57.
+LaTeX Font Info:    ... okay on input line 57.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 57.
+LaTeX Font Info:    ... okay on input line 57.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 57.
+LaTeX Font Info:    ... okay on input line 57.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 57.
+LaTeX Font Info:    ... okay on input line 57.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 57.
+LaTeX Font Info:    ... okay on input line 57.
 
 (/opt/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count158
+\scratchcounter=\count167
 \scratchdimen=\dimen180
-\scratchbox=\box66
-\nofMPsegments=\count159
-\nofMParguments=\count160
-\everyMPshowfont=\toks44
-\MPscratchCnt=\count161
+\scratchbox=\box68
+\nofMPsegments=\count168
+\nofMParguments=\count169
+\everyMPshowfont=\toks47
+\MPscratchCnt=\count170
 \MPscratchDim=\dimen181
-\MPnumerator=\count162
-\makeMPintoPDFobject=\count163
-\everyMPtoPDFconversion=\toks45
+\MPnumerator=\count171
+\makeMPintoPDFobject=\count172
+\everyMPtoPDFconversion=\toks48
 ) (/opt/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
 
@@ -737,8 +771,8 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 ABD: EveryShipout initializing macros
-\AtBeginShipoutBox=\box67
-Package hyperref Info: Link coloring ON on input line 55.
+\AtBeginShipoutBox=\box69
+Package hyperref Info: Link coloring ON on input line 57.
 
 (/opt/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
@@ -746,61 +780,61 @@ Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 (/opt/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count164
+\c@section@level=\count173
 )
-LaTeX Info: Redefining \ref on input line 55.
-LaTeX Info: Redefining \pageref on input line 55.
-LaTeX Info: Redefining \nameref on input line 55.
+LaTeX Info: Redefining \ref on input line 57.
+LaTeX Info: Redefining \pageref on input line 57.
+LaTeX Info: Redefining \nameref on input line 57.
 
-(./INFORME_NUMERICO (1).out) (./INFORME_NUMERICO (1).out)
+(./INFORME_NUMERICO_FINAL.out) (./INFORME_NUMERICO_FINAL.out)
 \@outlinefile=\write4
-\openout4 = `"INFORME_NUMERICO (1).out"'.
+\openout4 = `INFORME_NUMERICO_FINAL.out'.
 
-LaTeX Info: Redefining \. on input line 55.
-LaTeX Info: Redefining \% on input line 55.
-LaTeX Font Info:    Try loading font information for U+msa on input line 60.
+LaTeX Info: Redefining \. on input line 57.
+LaTeX Info: Redefining \% on input line 57.
+LaTeX Font Info:    Try loading font information for U+msa on input line 62.
 
 (/opt/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 60.
+LaTeX Font Info:    Try loading font information for U+msb on input line 62.
 
 (/opt/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-Underfull \hbox (badness 10000) in paragraph at lines 74--77
+Underfull \hbox (badness 10000) in paragraph at lines 76--79
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 88--91
+Underfull \hbox (badness 10000) in paragraph at lines 90--93
 
  []
 
 [1
 
 {/opt/texlive/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-Underfull \hbox (badness 10000) in paragraph at lines 100--101
+Underfull \hbox (badness 10000) in paragraph at lines 102--103
 
  []
 
 <leontief.jpg, id=42, 180.675pt x 225.84375pt>
 File: leontief.jpg Graphic file (type jpg)
 <use leontief.jpg>
-Package pdftex.def Info: leontief.jpg  used on input line 104.
+Package pdftex.def Info: leontief.jpg  used on input line 106.
 (pdftex.def)             Requested size: 142.26576pt x 142.27196pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 112--113
+Underfull \hbox (badness 10000) in paragraph at lines 114--115
 
  []
 
 
-Overfull \hbox (15.72574pt too wide) detected at line 124
+Overfull \hbox (15.72574pt too wide) detected at line 126
  [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 133--134
+Underfull \hbox (badness 10000) in paragraph at lines 135--136
 
  []
 
@@ -808,106 +842,96 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
 een already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.143 \end{array} \right) \]
+l.145 \end{array} \right) \]
                             \\ [2 <./leontief.jpg>]
-Underfull \hbox (badness 10000) in paragraph at lines 143--146
+Underfull \hbox (badness 10000) in paragraph at lines 145--148
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 148--150
+Underfull \hbox (badness 10000) in paragraph at lines 150--152
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 156--157
+Underfull \hbox (badness 10000) in paragraph at lines 158--159
 
  []
 
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 167.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 169.
 
 (/opt/texlive/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 167.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 169.
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
 een already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.196 		\begin{enumerate}
+l.198 		\begin{enumerate}
                           [3]pdfTeX warning (ext4): destination with the same i
 dentifier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.264 \newpage
+l.266 \newpage
                [4]
 <matrix.pdf, id=64, page=1, 845.0471pt x 597.50829pt>
 File: matrix.pdf Graphic file (type pdf)
 <use matrix.pdf, page 1>
-Package pdftex.def Info: matrix.pdf , page1 used on input line 267.
+Package pdftex.def Info: matrix.pdf , page1 used on input line 269.
 (pdftex.def)             Requested size: 493.94073pt x 252.66132pt.
 
-Overfull \hbox (18.77979pt too wide) in paragraph at lines 267--268
+Overfull \hbox (18.77979pt too wide) in paragraph at lines 269--270
  [] 
  []
 
 <matrix.pdf, id=68, page=2, 845.0471pt x 597.50829pt>
 File: matrix.pdf Graphic file (type pdf)
 <use matrix.pdf, page 2>
-Package pdftex.def Info: matrix.pdf , page2 used on input line 272.
+Package pdftex.def Info: matrix.pdf , page2 used on input line 274.
 (pdftex.def)             Requested size: 493.94073pt x 273.14717pt.
 
-Overfull \hbox (18.77979pt too wide) in paragraph at lines 272--273
+Overfull \hbox (18.77979pt too wide) in paragraph at lines 274--275
  [] 
  []
 
 
 Package multicol Warning: I moved some lines to the next page.
-(multicol)                Footnotes on page  might be wrong on input line 279.
+(multicol)                Footnotes on page  might be wrong on input line 281.
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
 een already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.279 ...estro sistema a resolver es $$(I-A)P=d$$ 
+l.281 ...estro sistema a resolver es $$(I-A)P=d$$ 
                                                   donde $p_i$ es la producci...
 [5 <./matrix.pdf, page is rotated 90 degrees> <./matrix.pdf, page is rotated 90
  degrees>]
 <TablasDatos.jpg, id=101, 639.38875pt x 170.6375pt>
 File: TablasDatos.jpg Graphic file (type jpg)
 <use TablasDatos.jpg>
-Package pdftex.def Info: TablasDatos.jpg  used on input line 286.
-(pdftex.def)             Requested size: 511.51169pt x 136.51016pt.
-
-Overfull \hbox (36.35074pt too wide) in paragraph at lines 286--287
- [] 
- []
-
+Package pdftex.def Info: TablasDatos.jpg  used on input line 288.
+(pdftex.def)             Requested size: 341.43056pt x 170.7282pt.
 <TiempoEjecucion.PNG, id=102, 468.24937pt x 308.65312pt>
 File: TiempoEjecucion.PNG Graphic file (type png)
 <use TiempoEjecucion.PNG>
-Package pdftex.def Info: TiempoEjecucion.PNG  used on input line 295.
+Package pdftex.def Info: TiempoEjecucion.PNG  used on input line 297.
 (pdftex.def)             Requested size: 298.77116pt x 199.17627pt.
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
 een already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.302 \noindent
-                \textbf{Analizando la Fig 2:} [6 <./TablasDatos.jpg> <./TiempoE
-jecucion.PNG>]
+l.304 \noindent
+                \textbf{Analizando la Fig 2} podemos notar que los metodos m...
+[6 <./TablasDatos.jpg> <./TiempoEjecucion.PNG>]
 <Errorenlosmetodos.jpg, id=109, 837.1275pt x 511.9125pt>
 File: Errorenlosmetodos.jpg Graphic file (type jpg)
 <use Errorenlosmetodos.jpg>
-Package pdftex.def Info: Errorenlosmetodos.jpg  used on input line 309.
-(pdftex.def)             Requested size: 502.28038pt x 307.14987pt.
+Package pdftex.def Info: Errorenlosmetodos.jpg  used on input line 310.
+(pdftex.def)             Requested size: 441.0058pt x 341.43298pt.
 
-Overfull \hbox (27.11943pt too wide) in paragraph at lines 309--310
- [] 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 314--316
+Underfull \hbox (badness 10000) in paragraph at lines 315--316
 
  []
 
@@ -915,43 +939,60 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
 een already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.316 \end{multicols}
-                      [7 <./Errorenlosmetodos.jpg>]
-Underfull \hbox (badness 10000) in paragraph at lines 355--356
+l.316 
+       [7 <./Errorenlosmetodos.jpg>]
+<algoritmos.jpg, id=114, 455.45157pt x 373.395pt>
+File: algoritmos.jpg Graphic file (type jpg)
+<use algoritmos.jpg>
+Package pdftex.def Info: algoritmos.jpg  used on input line 319.
+(pdftex.def)             Requested size: 142.26572pt x 142.26192pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 328--329
 
  []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 368--369
+
+ []
+
+
+Overfull \vbox (30.23589pt too high) has occurred while \output is active []
+
+
+Overfull \vbox (30.23589pt too high) has occurred while \output is active []
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
 een already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.374 \newpage
-               [8]pdfTeX warning (ext4): destination with the same identifier (
-name{page.}) has been already used, duplicate ignored
+l.369 \begin{center}
+                     [8 <./algoritmos.JPG>]pdfTeX warning (ext4): destination w
+ith the same identifier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.392 \end{document}
+l.404 \end{document}
                     %\grid [9]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 392.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 392.
- (./INFORME_NUMERICO (1).aux
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 404.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 404.
+ (./INFORME_NUMERICO_FINAL.aux
 LaTeX Info: Redefining \. on input line 23.
 LaTeX Info: Redefining \% on input line 23.
 LaTeX Info: Redefining \. on input line 24.
 LaTeX Info: Redefining \% on input line 24.
 )
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 392.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 392.
-Package rerunfilecheck Info: File `"INFORME_NUMERICO (1)".out' has not changed.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 404.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 404.
+Package rerunfilecheck Info: File `INFORME_NUMERICO_FINAL.out' has not changed.
 
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 392.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 404.
  ) 
 Here is how much of TeX's memory you used:
- 17865 strings out of 492616
- 329656 string characters out of 6134203
- 429307 words of memory out of 5000000
- 21407 multiletter control sequences out of 15000+600000
+ 18419 strings out of 492616
+ 337665 string characters out of 6134203
+ 438587 words of memory out of 5000000
+ 21944 multiletter control sequences out of 15000+600000
  11608 words of font info for 44 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  62i,9n,81p,1221b,576s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -970,10 +1011,10 @@ xlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl10.pfb></opt/texlive/texmf-
 dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></opt/texlive/texmf-dist/fonts/t
 ype1/public/amsfonts/cm/cmti10.pfb></opt/texlive/texmf-dist/fonts/type1/public/
 amsfonts/cm/cmti9.pfb>
-Output written on "INFORME_NUMERICO (1).pdf" (9 pages, 1840102 bytes).
+Output written on INFORME_NUMERICO_FINAL.pdf (9 pages, 1889410 bytes).
 PDF statistics:
- 174 PDF objects out of 1000 (max. 8388607)
+ 175 PDF objects out of 1000 (max. 8388607)
  119 compressed objects within 2 object streams
  9 named destinations out of 1000 (max. 500000)
- 151 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 156 words of extra memory for PDF output out of 10000 (max. 10000000)
 
