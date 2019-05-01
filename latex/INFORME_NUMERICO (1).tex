@@ -51,6 +51,7 @@
 \renewcommand{\thefootnote}{\fnsymbol{footnote}}
 \usepackage{url}
 \usepackage{hyperref}
+
 \begin{document}
 \begin{center}
  {\Large \textbf{MODELAMIENTO DE LA ECONOMÍA DE UN PAÍS}}
@@ -99,8 +100,6 @@
  Con el fin de comprender y ser capaz de manipular la economía de un país o una región, uno tiene que llegar a un cierto modelo basado en los diversos sectores de esta economía. El modelo de Leontief es un intento en esta dirección. Basado en la suposición de que cada industria en la economía tiene dos tipos de exigencias: la demanda externa (de fuera del sistema) y la demanda interna (demanda de una industria por otro en el mismo sistema), el modelo de Leontief representa la economía como un sistema de ecuaciones lineales. El modelo de Leontief fue inventado en los años 30 por el profesor Wassily Leontief \color{blue} Fig 1 \color{black} que desarrolló un modelo económico de la economía de Estados Unidos mediante su división en 500 sectores económicos. El 18 de octubre de 1973, el profesor Leontief fue galardonado con el Premio Nobel de economía por su esfuerzo.\\
  
 \begin{center}
-	
-	
 	\centering
 	\includegraphics[width=5cm,height=5cm]{leontief.jpg}
 	\\
@@ -280,13 +279,47 @@ Nuestro objetivo es hallar el nivel de producción(en dólares) de cada una de l
 \noindent Ahora aplicando el modelo abierto de Leontief, nuestro sistema a resolver es $$(I-A)P=d$$ donde $p_i$ es la producción total(en dólares) de la industria $S_i$.\\
 Como este sistema es de $20\times20$ sería ``imposible'' resolverlo manualmente, para resolverlo debemos usar métodos numéricos. En la siguiente tabla se muestra los algoritmos usados para resolver la ecuación, con sus respectivos márgenes de error y su tiempo de demora.\footnote{\href{https://drive.google.com/drive/folders/1F-M1slvs1ibC-nhFcPin_ge0fLCHVb1c?usp=sharing}{\underline{click aquí para ver el código de los métodos}}}
 \end{multicols}
+\vspace*{1cm}
 
 \begin{center}
-	\includegraphics[page=1, trim= 0cm 16cm 0cm 7cm ,clip,scale=0.8]{tabla}
+	\centering
+	\includegraphics[width=12cm,height=6cm]{TablasDatos.PNG}
+	\\
+	Fig1: Datos obtenidos por la computadora empleando metodos numericos 
+\end{center}
+
+\vspace*{1cm}
+
+\begin{center}
+	\centering
+	\includegraphics[width=10.5cm,height=7cm]{TiempoEjecucion.PNG}
+	\\
+	Fig2: Grafica del tiempo empleado al resolver el sistema
+	 
 \end{center}
 
 \begin{multicols}{2}
-	\noindent De la tabla deducimos que el peor algoritmo para resolver nuestra ecuación es la Factorización $LDL^t$ ya que este es el que tiene mayor rango de error y además es el que más demora en hallar la solución.\\ También observamos que el mejor algoritmo es para resolver nuestro sistema es la eliminación Gaussiana con pivote ya que su rango de error y su tiempo de ejecución son mínimos. Así nuestra mejor solución numérica es $P=X_5$.
+\noindent \textbf{Analizando la Fig 2} podemos notar que los metodos más lentos en comparación de los demas es Eliminacion Gaussiana sin Pivote y LDLt , mientras que la Eliminacion Gaussiana con Pivote y Gauss Jordan con Pivote son los dos metodos más rapidos para resolver el problema, ahora tenemos que comparar quien genera una menor cota de error para decir que es el mejor metodo.\\
+\noindent Si bien 5 metodos escogidos son muy rapidos para el problema(matriz de 20 x 20), en la realidad para analizar la economia de un pais, nos generan matriz muy grandes(matriz de 500 x 500), es ahi donde se va notar una mayor diferencia en que metodo es más rapido.
+\end{multicols}
+
+\begin{center}
+	\centering
+\includegraphics[width=15.5cm,height=12cm]{Errorenlosmetodos.PNG}
+	
+	Fig3: Grafica de las cotas de error optenidos por cada metodo, los metodos corresponden con Fig1
+\end{center}
+\begin{multicols}{2}
+\noindent \textbf{Analizando la figura 3}, entre los metodos que tienen una menor cota de error son 1, Eliminación Gaussiana, 3 Eliminacion LU, 5 Elimicacion Gaussiana con Pivote, 7 Eliminacion LU Pivote, viendo que el metodo más rapido fue Eliminación Gaussiana con Pivote entonces el mejor metodo es Eliminación Gaussiana con Pivote.\\
+\noindent Notar que el metodo 4 Factorización LDLt genera una cota de error muy grande, esto se debe a que la matriz del problema, si bien errar semidefinida positiva, esta no era simetrica entonces para emplear el metodo se recurrio a multiplicar por su transpuesta y asi poder emplear el metodo, este nos genero un error considerable.\\
+\end{multicols}
+
+
+\begin{multicols}{2}
+	\noindent Para este problema que consiste en modelar la economia de un pais ,usar el metodo de Factorización LDLt es muy perjudicial, esto podria generar muchas perdidas economicas, generar una mayor inflación y por consecuencia la población seria la mas afectada.
+	
+	\noindent \textbf{Analisis rapido} \\
+	De la tabla deducimos que el peor algoritmo para resolver nuestra ecuación es la Factorización $LDL^t$ ya que este es el que tiene mayor rango de error y además es el que más demora en hallar la solución.\\ También observamos que el mejor algoritmo es para resolver nuestro sistema es la eliminación Gaussiana con pivote ya que su rango de error y su tiempo de ejecución son mínimos. Así nuestra mejor solución numérica es $P=X_5$.
 	\begin{equation*}
 	P=
 	\begin{bmatrix}
@@ -322,7 +355,11 @@ Se observó que para la misma matriz, los márgenes de error y el tiempo de ejec
 \begin{center}
 {\large \bf 5. CONCLUSIONES}
 \end{center}
-Concluimos que para nuestra ecuación el mejor algoritmo es el de eliminación Gaussiana con pivoteo que nos da como solución $X_5$, así para satisfacer exactamente las demandas internas y externas la industria $S_1$ debe producir  \$$14801,59007326$, la  industria $S_2$ \$$103454,86190732$ y así sucecivamente siguiendo el vector solución.
+Para modelar un pais se necesitar hacer uso de los computadores, ya que estos poseen una enorme cantidad de datos y deben realizar muchos calculos, realizarlos manualmento seria imposible.\\
+El verdadero problema radica en encontrar el mejor metodo para resolver el problema.\\
+Concluimos que para nuestra ecuación \textbf{el mejor algoritmo es el de eliminación Gaussiana con pivoteo} que nos da como solución $X_5$, así para satisfacer exactamente las demandas internas y externas la industria $S_1$ debe producir  \$$14801,59007326$, la  industria $S_2$ \$$103454,86190732$ y así sucecivamente siguiendo el vector solución.\\
+Además concluimos que el \textbf{peor metodo} empleado para resolver el problema es \textbf{Factorizacion LDLt}, este nos gerera una cota de error muy grande. Utilizar este metodo generaria perdidas de miles de dolares al pais.
+
 \begin{center}
 {\large \bf Agradecimientos}
 \end{center}
