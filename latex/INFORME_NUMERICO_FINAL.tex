@@ -306,27 +306,25 @@ Podemos notar que los métodos más lentos en comparación de los demás es Elim
 
 \begin{center}
 	\centering
-\includegraphics[scale=0.6]{Errorenlosmetodos.jpg}
+\includegraphics[scale=0.5]{Errorenlosmetodos.jpg}
 	
 	Fig3: Gráfica de las cotas de error optenidos por cada método, los métodos corresponden con Fig1
 \end{center}
 \begin{multicols}{2}
 \noindent \textbf{Analizando la figura 3}, entre los métodos que tienen una menor cota de error son 1, Eliminación Gaussiana, 3 Eliminación LU, 5 Elimicación Gaussiana con Pivote, 7 Eliminación LU Pivote, viendo que el método más rapido fue Eliminación Gaussiana con Pivote entonces el mejor metodo es Eliminación Gaussiana con Pivote. 
 Este algoritmo consiste básicamente en la transformación de una matriz cualquiera en una matriz triangular superior, ya que es mucho más sencillo manipular sistemas de ecuaciones cuya matriz psee dicha característica. Las operaciones elementales en la eliminación de Gauss son tres: multiplicación de una ecuación por una constante que no es cero,sustracción del múltiplo de una ecuación con otra ecuación y finalmente el intercambio de ecuaciones.El primer algoritmo recibe la matriz aumentada conformada por la matriz $a$ y el vector $b$, y transformará el sistema de ecuaciones en un sistema cuya matriz sea triangular superior. Finalmente, para obtener la solución se usa el algoritmo de sustitución inversa. 
-
+\end{multicols}
+\vspace*{-3cm}
 \begin{center}
 	\centering
-	\includegraphics[width=7cm,height=7cm]{algoritmos.jpg}
+	\includegraphics[scale=0.6]{algoritmos.jpg}
 	\\
 	
 \end{center}
-
-\noindent Notar que el metodo 4 Factorización LDLt genera una cota de error muy grande, esto se debe a que la matriz del problema, si bien era semidefinida positiva, esta no era simétrica entonces para emplear el método se recurrió a multiplicar por su transpuesta y asi poder emplear el método, este nos genero un error considerable.\\
-\end{multicols}
-
-
 \begin{multicols}{2}
-	\noindent Para este problema que consiste en modelar la economía de un país ,usar el método de Factorización LDLt es muy perjudicial, esto podria generar muchas perdidas economicas, generar una mayor inflación y por consecuencia la población seria la más afectada.
+\noindent Notar que el metodo 4 Factorización LDLt genera una cota de error muy grande, esto se debe a que la matriz del problema, si bien era semidefinida positiva, esta no era simétrica entonces para emplear el método se recurrió a multiplicar por su transpuesta y asi poder emplear el método, este nos genero un error considerable.
+
+\noindent Para este problema que consiste en modelar la economía de un país ,usar el método de Factorización LDLt es muy perjudicial, esto podria generar muchas perdidas económicas, generar una mayor inflación y por consecuencia la población seria la más afectada.
 	
 	\noindent \textbf{Análisis rápido} \\
 	De la tabla deducimos que el peor algoritmo para resolver nuestra ecuación es la Factorización $LDL^t$ ya que este es el que tiene mayor rango de error y además es el que más demora en hallar la solución.\\ También observamos que el mejor algoritmo es para resolver nuestro sistema es la eliminación Gaussiana con pivote ya que su rango de error y su tiempo de ejecución son mínimos. Así nuestra mejor solución numérica es $P=X_5$.
@@ -380,7 +378,6 @@ Ingenier\'{\i}a por su apoyo.
 %\end{center}
 
 \end{multicols}
-\newpage
 
 \begin{center}
  -----------------------------------------------------------------------------
