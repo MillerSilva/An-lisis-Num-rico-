@@ -9,8 +9,6 @@
 \usepackage{amsfonts}
 \usepackage{amsmath}
 \usepackage{amsthm}
-\usepackage{algorithm}
-\usepackage{algpseudocode}
 \usepackage{stackrel}
 \usepackage{graphicx}
 \usepackage[colorinlistoftodos]{todonotes}
@@ -146,7 +144,7 @@ p_{n} \\
  $A$ es denominada MATRIZ DE ENTRADA-SALIDA.\\
  Luego estamos buscando un vector P que satisfaga $AP = P$ y con componentes no negativos, al menos uno de los cuales sea positivo.\\
  
- \item{\textbf{EL MODELO ABIERTO DE LEONTIEF: }}El primer modelo de Leontief trata el caso en el que no hay mercancías que ingresen a la economia, pero en realidad esto no sucede muy a menudo. Por lo general, una determinada economía tiene que satisfacer una demanda externa, por ejemplo, de organismos como los organismos gubernamentales. En este caso, sea $d_{i}$ la demanda de la industria exterior $S_i$, $p_{i}$ y $m_{ij}$ se definen como en el modelo cerrado. Luego tendremos lo siguiente:
+ \item{\textbf{EL MODELO ABIERTO DE LEONTIEF: }}El primer modelo de Leontief trata el caso en el que no hay mercancías que ingresen a la economía, pero en realidad esto no sucede muy a menudo. Por lo general, una determinada economía tiene que satisfacer una demanda externa, por ejemplo, de organismos como los organismos gubernamentales. En este caso, sea $d_{i}$ la demanda de la industria exterior $S_i$, $p_{i}$ y $m_{ij}$ se definen como en el modelo cerrado. Luego tendremos lo siguiente:
  $$ p_{i} = m_{i1}p_{1} + m_{i2}p_{2} + ... + m_{in}p_{n} + d_{i}$$
  para cada $i=1,2,...,n$. Esto nos da el siguiente sistema lineal:  $P = AP + d$, donde $P$ y $A$ son definidos como en el modelo cerrado y $d$ es el vector de demanda:\\
  	\[ d =
@@ -285,9 +283,9 @@ Como este sistema es de $20\times20$ sería ``imposible'' resolverlo manualmente
 
 \begin{center}
 	\centering
-	\includegraphics[width=12cm,height=6cm]{TablasDatos}
+	\includegraphics[scale=0.8]{TablasDatos.jpg}
 	\\
-	Fig1: Datos obtenidos por la computadora empleando metodos numericos 
+	Fig1: Datos obtenidos por la computadora empleando métodos numéricos 
 \end{center}
 
 \vspace*{1cm}
@@ -296,43 +294,41 @@ Como este sistema es de $20\times20$ sería ``imposible'' resolverlo manualmente
 	\centering
 	\includegraphics[width=10.5cm,height=7cm]{TiempoEjecucion.PNG}
 	\\
-	Fig2: Grafica del tiempo empleado al resolver el sistema
+	Fig2: Gráfica del tiempo empleado al resolver el sistema
 	 
 \end{center}
 
 \begin{multicols}{2}
-\noindent \textbf{Analizando la Fig 2} podemos notar que los metodos más lentos en comparación de los demas es Eliminacion Gaussiana sin Pivote y LDLt , mientras que la Eliminacion Gaussiana con Pivote y Gauss Jordan con Pivote son los dos metodos más rapidos para resolver el problema, ahora tenemos que comparar quien genera una menor cota de error para decir que es el mejor metodo.\\
-\noindent Si bien 5 metodos escogidos son muy rapidos para el problema(matriz de 20 x 20), en la realidad para analizar la economia de un pais, nos generan matriz muy grandes(matriz de 500 x 500), es ahi donde se va notar una mayor diferencia en que metodo es más rapido.
+\noindent \textbf{Analizando la Fig 2:} 
+Podemos notar que los métodos más lentos en comparación de los demás es Eliminación Gaussiana sin Pivote y LDLt , mientras que la Eliminación Gaussiana con Pivote y Gauss Jordan con Pivote son los dos métodos más rápidos para resolver el problema, ahora tenemos que comparar quien genera una menor cota de error para decir que es el mejor método.\\
+\noindent Si bien 5 métodos escogidos son muy rápidos para el problema(matriz de 20 x 20), en la realidad para analizar la economía de un país, nos generan matriz muy grandes(matriz de 500 x 500), es ahí donde se va notar una mayor diferencia en que método es más rápido.
 \end{multicols}
 
 \begin{center}
 	\centering
-\includegraphics[width=15.5cm,height=12cm]{Errorenlosmetodos}
+\includegraphics[scale=0.6]{Errorenlosmetodos.jpg}
 	
-	Fig3: Grafica de las cotas de error optenidos por cada metodo, los metodos corresponden con Fig1
+	Fig3: Gráfica de las cotas de error optenidos por cada método, los métodos corresponden con Fig1
 \end{center}
 \begin{multicols}{2}
-\noindent \textbf{Analizando la figura 3}, entre los metodos que tienen una menor cota de error son 1, Eliminación Gaussiana, 3 Eliminacion LU, 5 Elimicacion Gaussiana con Pivote, 7 Eliminacion LU Pivote, viendo que el metodo más rapido fue Eliminación Gaussiana con Pivote entonces el mejor metodo es Eliminación Gaussiana con Pivote. Este algoritmo consiste básicamente en la transformación de una matriz cualquiera en una matriz triangular superior, ya que es mucho más sencillo manipular sistemas de ecuaciones cuya matriz psee dicha característica. Las operaciones elementales en la eliminación de Gauss son tres: multiplicación de una ecuación por una constante que no es cero,sustracción del múltiplo de una ecuación con otra ecuación y finalmente el intercambio de soluciones.El primer algoritmo recibe la matriz aumentada conformada por la matriz $a$ y el vector $b$, y transformará el sistema de ecuaciones en un sistema cuya matriz sea triangular superior. Finalmente, para obtener la solución se usa el algoritmo de sustitución inversa.\\ 
+\noindent \textbf{Analizando la figura 3}, entre los métodos que tienen una menor cota de error son 1, Eliminación Gaussiana, 3 Eliminación LU, 5 Elimicación Gaussiana con Pivote, 7 Eliminación LU Pivote, viendo que el método más rapido fue Eliminación Gaussiana con Pivote entonces el mejor metodo es Eliminación Gaussiana con Pivote. 
+Este algoritmo consiste básicamente en la transformación de una matriz cualquiera en una matriz triangular superior, ya que es mucho más sencillo manipular sistemas de ecuaciones cuya matriz psee dicha característica. Las operaciones elementales en la eliminación de Gauss son tres: multiplicación de una ecuación por una constante que no es cero,sustracción del múltiplo de una ecuación con otra ecuación y finalmente el intercambio de ecuaciones.El primer algoritmo recibe la matriz aumentada conformada por la matriz $a$ y el vector $b$, y transformará el sistema de ecuaciones en un sistema cuya matriz sea triangular superior. Finalmente, para obtener la solución se usa el algoritmo de sustitución inversa. 
 
 \begin{center}
 	\centering
-	\includegraphics[width=5cm,height=5cm]{algoritmos.jpg}
+	\includegraphics[width=7cm,height=7cm]{algoritmos.jpg}
 	\\
-
+	
 \end{center}
 
-
-\noindent Si alguna de estas operaciones se aplica a algún sistema de ecuaciones, se obtendrá un sistema equivalente al original.\\
-La primera parte del método consiste en hacer que el sistema sea representado por una matriz triangular superior. Cuando ya se tiene el sistema triangular superior se usa el algoritmo de sustitución inversa para el cálculo de la solución.
-
-\noindent Notar que el metodo 4 Factorización LDLt genera una cota de error muy grande, esto se debe a que la matriz del problema, si bien errar semidefinida positiva, esta no era simetrica entonces para emplear el metodo se recurrio a multiplicar por su transpuesta y asi poder emplear el metodo, este nos genero un error considerable.\\
+\noindent Notar que el metodo 4 Factorización LDLt genera una cota de error muy grande, esto se debe a que la matriz del problema, si bien era semidefinida positiva, esta no era simétrica entonces para emplear el método se recurrió a multiplicar por su transpuesta y asi poder emplear el método, este nos genero un error considerable.\\
 \end{multicols}
 
 
 \begin{multicols}{2}
-	\noindent Para este problema que consiste en modelar la economia de un pais ,usar el metodo de Factorización LDLt es muy perjudicial, esto podria generar muchas perdidas economicas, generar una mayor inflación y por consecuencia la población seria la mas afectada.
+	\noindent Para este problema que consiste en modelar la economía de un país ,usar el método de Factorización LDLt es muy perjudicial, esto podria generar muchas perdidas economicas, generar una mayor inflación y por consecuencia la población seria la más afectada.
 	
-	\noindent \textbf{Analisis rapido} \\
+	\noindent \textbf{Análisis rápido} \\
 	De la tabla deducimos que el peor algoritmo para resolver nuestra ecuación es la Factorización $LDL^t$ ya que este es el que tiene mayor rango de error y además es el que más demora en hallar la solución.\\ También observamos que el mejor algoritmo es para resolver nuestro sistema es la eliminación Gaussiana con pivote ya que su rango de error y su tiempo de ejecución son mínimos. Así nuestra mejor solución numérica es $P=X_5$.
 	\begin{equation*}
 	P=
@@ -369,10 +365,10 @@ Se observó que para la misma matriz, los márgenes de error y el tiempo de ejec
 \begin{center}
 {\large \bf 5. CONCLUSIONES}
 \end{center}
-Para modelar un pais se necesitar hacer uso de los computadores, ya que estos poseen una enorme cantidad de datos y deben realizar muchos calculos, realizarlos manualmento seria imposible.\\
-El verdadero problema radica en encontrar el mejor metodo para resolver el problema.\\
+Para modelar un país se necesita hacer uso de los computadores, ya que estos poseen una enorme cantidad de datos y deben realizar muchos cálculos, realizarlos manualmente sería imposible.\\
+El verdadero problema radíca en encontrar el mejor método para resolver el problema.\\
 Concluimos que para nuestra ecuación \textbf{el mejor algoritmo es el de eliminación Gaussiana con pivoteo} que nos da como solución $X_5$, así para satisfacer exactamente las demandas internas y externas la industria $S_1$ debe producir  \$$14801,59007326$, la  industria $S_2$ \$$103454,86190732$ y así sucecivamente siguiendo el vector solución.\\
-Además concluimos que el \textbf{peor metodo} empleado para resolver el problema es \textbf{Factorizacion LDLt}, este nos gerera una cota de error muy grande. Utilizar este metodo generaria perdidas de miles de dolares al pais.
+Además concluimos que el \textbf{peor método} empleado para resolver el problema es \textbf{Factorización LDLt}, este nos gerera una cota de error muy grande. Utilizar este método generaría pérdidas de miles de dólares al país.
 
 \begin{center}
 {\large \bf Agradecimientos}
@@ -384,6 +380,7 @@ Ingenier\'{\i}a por su apoyo.
 %\end{center}
 
 \end{multicols}
+\newpage
 
 \begin{center}
  -----------------------------------------------------------------------------
